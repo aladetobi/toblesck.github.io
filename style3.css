@@ -1,0 +1,222 @@
+/* navigation bar */
+body {
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* navigation */
+nav.navbar {
+    background-color: #212529 !important;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-link:hover {
+    background: #1abc9c;
+    border-radius: 10px;
+
+}
+/* first section */
+.first-class {
+    padding: 30px 0 50px 0;
+}
+#first {
+    background: #1abc9c;
+    height: 100vh;
+    align-items: center;
+}
+
+#first h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+#first h2 {
+    font-size: 1.5rem;
+}
+.picture {
+    position: relative;
+}
+.over {
+    position: absolute;
+    width: 95%;
+    height: 105%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background: #1abc9c;
+    transition: all 1s;
+    opacity: 0;
+}
+.over:hover{
+    opacity: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.img img {
+    width: 240px;
+    margin-top: 90px;
+}
+/* second section */
+#second {
+    background-color: #1abc9c;
+    padding: 30px 0 50px 0;
+}
+#second p {
+    padding: 0 150rem; 
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: -0.5ssspx;
+    margin: 0 auto;
+}
+/* form section  */
+
+.form .inputDiv, .form .textDiv {
+    max-width: 100%;
+    height: 5rem;
+    margin: 3rem 0;
+    position: relative;
+}
+label {
+    position: absolute;
+    font-size: 0.7rem;
+    color: green;
+    visibility: hidden;
+    opacity: 0;
+    top: -15px;
+    left: 0;
+    transition: all 0.5s;
+}
+.open label {
+    opacity: 1;
+    visibility: visible;
+    top: -20px;
+}
+
+.form .inputDiv .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    padding: .2rem 1rem 3rem 0;
+    color: rgba(0,0,0,0.9);
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+.input:last-child {
+    margin-bottom: 0;
+}
+.form .textDiv {
+    margin: 0;
+    max-height: 10rem;
+    height: 100%;
+}
+.form .textDiv textarea{
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+/* footer section */
+#footer {
+    background: #2c3e50;
+}
+#footer h2 {
+    font-size: 1.5rem;
+}
+
+#footer span {
+    font-size: 1.5rem;
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 50%;
+
+}
+.btn-lg {
+    background-color: #1abc9c;
+    border-radius: 15px;
+}
+
+#footer p {
+    font-size: 1rem;
+    font-weight: 50;
+}
+
+.secondfooter {
+    background-color: #1a252f;
+    color: #fff;
+    text-align: center;
+}
+/* line part */
+.lines {
+    max-width: 20rem;
+    height: .2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.line {
+    border-radius: 5px;
+    width: 20rem;
+    height: .4rem;
+    background-color: #fff;
+}
+.star {
+    margin: 0 .5rem;
+    font-size: 2.5rem;
+}
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background: wite;
+}
+.to-top span {
+    font-size: 2rem;
+}
+#portfolio .line, #contact .line {
+     background: black;
+}
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    #first h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+ .img img {
+     margin-top: 0;
+ }
+}
